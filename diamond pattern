@@ -1,0 +1,38 @@
+import java.util.*;
+class pt2
+{
+public static void main(String args[])
+{
+int i,j,k,n,r=1;
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+r=n-1;
+for(i=1;i<=n;i++)
+{
+for(k=1;k<=r;k++)
+{
+System.out.print("");
+}
+r--;
+for(j=1;j<=(2*i-1);j++)
+{
+System.out.print("*");
+}
+System.out.println("");
+}
+r=1;
+for(i=1;i<=n;i++)
+{
+for(k=1;k<=r;k++)
+{
+System.out.print("");
+}
+r++;
+for(j=1;j<=2*(n-i)-1;j++)
+{
+System.out.print("*");
+}
+System.out.println("");
+}
+}
+}
