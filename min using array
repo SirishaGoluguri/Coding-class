@@ -1,0 +1,27 @@
+import java.util.*;
+class Arraymin
+{
+public static void main(String args[])
+{
+int size,i,min;
+System.out.print("enter size of array");
+Scanner sc=new Scanner(System.in);
+size=sc.nextInt();
+int a[];
+a=new int[size];
+System.out.print("enter elements");
+for(i=0;i<size;i++)
+{
+a[i]=sc.nextInt();
+}
+min=a[0];
+for(i=1;i<size;i++)
+{
+if(a[i]<min)
+min=a[i];
+}
+System.out.println("minimum value is"+min);
+}
+}
+
+
