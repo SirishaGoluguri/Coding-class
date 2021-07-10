@@ -1,0 +1,21 @@
+import java.util.*;
+class Stringsum
+{
+public static void main(String args[])
+{
+String str;
+Scanner sc=new Scanner(System.in);
+System.out.print("enter string");
+str=sc.nextLine();
+String ch[]=str.split(" "," ");
+int n=ch.length;
+if(n==0)
+System.out.print(n);
+else
+{
+String st=ch[n-1];
+int m=st.length();
+System.out.print(" "+m);
+}
+}
+}
