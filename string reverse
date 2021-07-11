@@ -1,0 +1,17 @@
+import java.lang.*;
+import java.util.*;
+class streverse
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String st1;
+System.out.print("enter a string");
+st1=sc.nextLine();
+int n=st1.length();
+for(int i=n;i>0;--i)
+{
+System.out.print(st1.charAt(i-1));
+}
+}
+}
