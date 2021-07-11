@@ -1,0 +1,27 @@
+import java.util.*;
+class values
+{
+public static void main(String args[])
+{
+int n;
+Scanner sc=new Scanner(System.in);
+System.out.print("enter decimal number");
+n=sc.nextInt();
+System.out.print("enter a case value");
+int ch=sc.nextInt();
+String h=Integer.toBinaryString(n);
+String g=Integer.toOctalString(n);
+String s=Integer.toHexString(n);
+switch (ch)
+{
+case 1:System.out.print("binary  "  +h);
+       break;
+case 2:System.out.print("octa   " +g);
+       break;
+case 3:System.out.print("hexa  "  +s);
+       break;
+default:System.out.print("no case");
+break;
+}
+}
+}
