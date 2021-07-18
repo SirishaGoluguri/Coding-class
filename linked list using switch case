@@ -1,0 +1,47 @@
+import java.util.*;
+class List
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer>x=new LinkedList<Integer>();
+int n,ch,index=0;
+System.out.println("1.Begin Insert\n2.End Insert\n3.Positon Insert\n4.Begining delete\n5.End delete\n6.Position delete\n7.Display\n8.Exit......Enter your choice");
+ch=sc.nextInt();
+do
+{
+switch(ch)
+{
+case 1:System.out.println("Enter n value");
+       n=sc.nextInt();
+       x.addFirst(n);
+       break;
+case 2:System.out.println("Enter n value");
+       n=sc.nextInt();
+       x.addLast(n);
+       break;
+case 3:System.out.println("Enter n value");
+       n=sc.nextInt();
+       x.add(index);
+       break;
+case 4:System.out.println("Enter n value");
+       n=sc.nextInt();
+       x.removeFirst();
+       break;
+case 5:System.out.println("Enter n value");
+       n=sc.nextInt();
+       x.removeLast();
+       break;   
+case 6:System.out.println("Enter n value");
+       n=sc.nextInt();
+       x.remove(index);
+       break;    
+case 7:System.out.println(x);
+       break;
+default:System.out.println("data not found");
+}
+System.out.println("1.Begin Insert\n2.End Insert\n3.Positon Insert\n4.Begining delete\n5.End delete\n6.Position delete\n7.Display\n8.Exit......Enter your choice");
+ch=sc.nextInt();
+}while(ch>8);
+}
+}
