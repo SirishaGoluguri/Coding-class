@@ -1,0 +1,13 @@
+import java.util.*;
+class Hash
+{
+public static void main(String args[])
+{
+HashMap<Integer,String>x=new HashMap<Integer,String>();
+x.put(5,"John");
+x.put(1,"Sam");
+x.put(7,"kim");
+TreeMap<Integer,String>t=new TreeMap<Integer,String>(x);
+System.out.println(" "+x);
+}
+}
